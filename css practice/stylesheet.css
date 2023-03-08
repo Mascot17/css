@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #ffffff;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5rem;
+
+}
+/* Global */
+.container{
+    overflow: hidden;
+    margin: auto;
+    width: 80%;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+/*header*/
+header{
+    background: #ffffff;
+    color: #000;
+    padding-top: 1.875rem;
+    min-height: 4.375rem;
+    border-bottom: #7e866c .0625rem solid;
+}
+
+
+header #main{
+    float: left;
+    
+}
+header a{
+    text-decoration:none;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 1rem;
+    
+}
+header li{
+    float: left;
+    display: inline;
+    padding: 0 1.25rem 0 1.25rem;
+}
+header nav{
+    float: right;
+    margin-top: 5px;
+    
+}
+header #main h1{
+    margin: 0;
+}
+
+header .current, .content a{
+    color: #000;
+
+}
+header a:hover{
+    color: #7e866c;
+    font-weight: bolder;
+}
+h1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+/* form */
+form{
+   
+   display: flex;
+   flex-direction: column;
+   min-height: 4.375rem;
+   border-radius: 0.9rem;
+   box-sizing: border-box;
+
+}
+.my_form{
+    padding: 0.8rem;
+}
+.my_form .form_group{
+    margin: 0.4rem;
+    padding: 0.3rm 0 0.3rem 0;
+    text-align: center;
+   
+}
+.my_form label{
+    color: #000;
+}
+
+.my_form input[type="text"]{
+    padding: 0.5rem 0 0.5rem 0;
+    border-radius: 0.5rem;
+    width: 20%;
+}
+
+.my_form input[type="email"]{
+    padding: 0.5rem 0 0.5rem 0;
+    border-radius: 0.5rem;
+    width: 20%;
+}
+
+.my_form input[type="date"]{
+    padding: 0.2rem 0 0.2rem 0;
+    border-radius: 0.5rem;
+    background: #ffffff;
+    color: #24096e;
+    
+}
+
+.my_form input[type="password"]{
+    padding: 0.5rem 0 0.5rem 0;
+    border-radius: 0.5rem;
+    width: 20%;
+    background: transparent;
+}
+
+button{
+    display: inline;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 0.2rem;
+    background-color: transparent;
+    border: solid #24096e .0625rem;
+    border-radius: 0.5rem;
+    
+}
+
+button:hover{
+    color: #7e866c;
+}
+
+
+footer{
+    color: #000;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+    margin-top: 1.5rem;
+    margin-bottom: none;
+}
+
+/* @media query */
+
+@media(max-width 750px){
+    header #main,
+    header nav,
+    header li{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    header{
+        margin-bottom: 1.25rem;
+    }
+    form{
+        margin-top: 1.875rem;
+    }
+    button{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+        float: none;
+
+    }
+}
